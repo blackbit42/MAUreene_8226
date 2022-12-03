@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "Token_Ring_MAU")(type "KiCad")(uri "${KIPRJMOD}/Token_Ring_MAU.pretty")(options "")(descr ""))
+)
