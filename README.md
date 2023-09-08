@@ -1,3 +1,6 @@
+> [!WARNING]
+> The current revision of the board is not functional. Build only if you want to work on fixing it.
+
 # Token Ring MAU 'MAUreen'
 
 MAUreene 8226 is a Token Ring (IEEE 802.5) Media Access Unit (MAU) that is inspired by the IBM 8226. For the most part, it is a reproduction of the IBM 8226, reduced to 2 'lobes', which is Token Ring lingo for what is known as a port in the context of other network technologies.
@@ -12,7 +15,7 @@ In an ethernet network you can nowadays connect two arbitrary devices with each 
 
 ## BOM analysis and mapping
 
-| Original 8226 | Port 1 | Port 2  | Package      | Type                      | Measured value[^1] | Marking           | Remarks                             |
+| Original 8226 | Lobe 1 | Lobe 2  | Package      | Type                      | Measured value[^1] | Marking           | Remarks                             |
 | ---           | ---    | ---     | ---          | ---                       | ---                | ---               | ---                                 |
 | R2            | R1     | R21     | 0805         |                           | 4.8k               | 4871              |                                     |
 | R10           | R2     | R22     | 0603         |                           | -None-             | -None-            | Opto-coupler biasing, not populated |
@@ -64,6 +67,24 @@ CR7 is in a 3-pin SOT23 package, containing only a single diode. It is connected
 Unfortunately somebody got the direction wrong, hence there is significant reverse EMF with spikes of around 200V. 
 Remarkably, neither the diode itself dies from excessive forward current when the relay is on, nor the switching transistor from the voltage spikes when the relay is being switched off.
 In the design of this contraption, a diode with normal flyback operation has been foreseen.
+
+## Pictures
+
+Photo:
+
+[![MAUreene_8226_photo.jpeg](pictures/MAUreene_8226_photo_small.jpeg)](pictures/MAUreene_8226_photo.jpeg)
+
+Kicad:
+
+![MAUreene_8226_kicad.png](pictures/MAUreene_8226_kicad.png)
+
+FreeCAD:
+
+![MAUreene_8226_freecad.png](pictures/MAUreene_8226_freecad.png)
+
+X-ray of original PCB, courtesy of [@Manawyrm](https://github.com/Manawyrm):
+
+![IBM_8226_xray.png](pictures/IBM_8226_xray.png)
 
 ## Links
 
